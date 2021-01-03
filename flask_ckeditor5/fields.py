@@ -1,6 +1,6 @@
 from markupsafe import Markup
-from wtforms.widgets import TextArea
-from wtforms.fields import TextAreaField
+from wtforms.widgets import TextArea  # type: ignore
+from wtforms.fields import TextAreaField  # type: ignore
 
 
 class CKTextAreaWidget(TextArea):
