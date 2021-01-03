@@ -30,7 +30,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Static type analysis
       run: |
-        mypy .
+        mypy flask_ckeditor5/*.py *_test.py
     - name: Test with unittest
       run: |
         python -m unittest *_test.py
