@@ -31,7 +31,7 @@ class CKEditor5TestCase(unittest.TestCase):
         expect: Markup = Markup("""
             <script>
                 ClassicEditor
-                    .create( document.querySelector( '#editor' ) )
+                    .create( document.querySelector( '.ckeditor' ) )
                     .catch( error => {
                         console.error( error );
                     } );
